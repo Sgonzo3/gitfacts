@@ -1,5 +1,13 @@
+
+html {
+  font-size: 16px;
+  height: 100%;
+  width: 100%;
+}
+
 .App {
   text-align: center;
+  background: gold;
 }
 
 .App-logo {
@@ -8,21 +16,78 @@
   pointer-events: none;
 }
 
-.App-header {
+aside {
+  width: 100%;
+  /* position: absolute; */
   background-color: #282c34;
-  min-height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  justify-content: space-around;
+  /* font-size: calc(10px + 2vmin); */
   color: white;
+  border-bottom-left-radius: 1rem;
+  border-bottom-right-radius: 1rem;
 }
 
 .App-link {
   color: #61dafb;
 }
 
+.Panel{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  /* min-height: 20vh; */
+  border: 1px solid black;
+  margin: 1rem 0;
+}
+
+.search {
+  height: 2rem;
+  border-radius: 2rem;
+  width: 80vw;
+  border: 1px solid black;
+  text-align: center;
+  font-size: 1rem;
+}
+
+.search-dropdown {
+
+}
+
+main {
+  width: 100%;
+  background-color: gold;
+
+  min-height: 80vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.Graph {
+  flex: 1;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  /* height: 100vh; */
+  /* padding-top: 30vh; */
+}
+
+.result {
+  border: 1px solid black;
+  /* border-radius: 1rem; */
+  flex: 1;
+  min-width: 200px;
+  min-height: 200px;
+  background: rgba(0,0,0,0.6);
+}
+
+footer {
+  margin: 1rem 0;
+}
 @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);
